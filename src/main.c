@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#define SEGMENT_PORT GPIOC
+#define SEGMENT_PORT GPIOC    
 #define INPUT_PORT GPIOD
 #define DOWN_PIN GPIO_PIN_1
 #define UP_PIN GPIO_PIN_5
@@ -14,7 +14,7 @@
 
 uint8_t seg_vals[10] = {0b01000000,0b11110010,0b010001000,0b10100000, 0b00110010, 0b00100100, 0b00000100, 0b11110000,0b00000000, 0b00100000}; //Ještě se upraví
 
-void rx_action(void) // will not compile without this event definition
+void rx_action(void) // will not compile without this event definition   
 {
     char c = UART1_ReceiveData8();
 }
